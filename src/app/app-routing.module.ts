@@ -31,6 +31,10 @@ const routes: Routes = [
       {
         path: 'sample-page',
         loadComponent: () => import('./demo/others/sample-page/sample-page.component').then((c) => c.SamplePageComponent)
+      },
+      {
+        path: 'watch-list',
+        loadComponent: () => import('./demo/component/watch-list/watch-list.component').then((c) => c.WatchListComponent)
       }
     ]
   },
